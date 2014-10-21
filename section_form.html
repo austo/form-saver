@@ -35,26 +35,26 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">
-                        A100 Application
+                        Test Application
                     </a>
                 </li>
                 <li>
-                    <a id="uxUser" section-id="1" href="#user">User</a>
+                    <a id="uxUser" section-id="0" class="formSwapper" href="#user">User</a>
                 </li>
                 <li>
-                    <a href="#uxPersonal">Personal Details</a>
+                    <a href="#uxPersonal" section-id="1" class="formSwapper">Personal Details</a>
                 </li>
                 <li>
-                    <a href="#uxReferrals">Referrals</a>
+                    <a href="#uxReferrals" section-id="2" class="formSwapper">Referrals</a>
                 </li>
                 <li>
-                    <a href="#uxSchedule">Schedule Information</a>
+                    <a href="#uxSchedule" section-id="3" class="formSwapper">Schedule Information</a>
                 </li>
                 <li>
-                    <a href="#uxExperience">Technical Experience</a>
+                    <a href="#uxExperience" section-id="4" class="formSwapper">Technical Experience</a>
                 </li>
                 <li>
-                    <a href="#uxMaterial">Supplemental Materials</a>
+                    <a href="#uxMaterial" section-id="5" class="formSwapper">Supplemental Materials</a>
                 </li>
             </ul>
         </div>
@@ -65,34 +65,35 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12" id='user'>
-                        <!-- <h1>Section1</h1>
-                        User Section
-                        <br/> -->
                         <div id="uxMainContent"></div>
-                        <!-- <a href="resources/new_applicant.php" class="btn btn-default">Full Screen</a> -->
                     </div>
                     <div class="col-lg-8" id='refer'>
-                        <!-- <h1>Section2</h1>
-                        Identify Information
-                        <br>
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Full Screen</a> -->
                     </div>
+                </div>
+                <div class="padding"></div>
+                <div class="save-controls" id="uxSaveControls">
+                    <button class="btn btn-lg btn-primary" id="uxSaveCmd">
+                        Save application in progress
+                    </button>
+                    <button class="btn btn-lg btn-primary" id="uxCheckCmd">
+                        Check form values
+                    </button>
+                    <button class="btn btn-lg btn-primary" id="uxSubmitCmd">
+                        Submit application
+                    </button>
                 </div>
             </div>
         </div>
-        <!-- /#page-content-wrapper -->
+    </div>
 
     </div>
-    <!-- /#wrapper -->
 
-    <!-- jQuery Version 1.11.0 -->
     <script src="public_html/js/jquery-1.11.0.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
     <script src="public_html/js/bootstrap.min.js"></script>
 
     <script src="public_html/js/section_form.js"></script>
-
+    
     <!-- Menu Toggle Script -->
     <script>
     $("#menu-toggle").click(function(e) {
